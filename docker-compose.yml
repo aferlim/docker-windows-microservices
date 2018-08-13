@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  docker-api:
+    image: docker-api
+    build:
+      context: .
+      dockerfile: docker-api\Dockerfile
+
+  standard-api:
+    image: standard-api
+    build:
+      context: .\standard-api
+      dockerfile: Dockerfile
+

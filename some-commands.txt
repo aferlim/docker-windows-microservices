@@ -1,0 +1,5 @@
+
+
+docker run -d -p 80:80 -e APPSETTING_setting-test="dinamic" -e CONNSTR_connection-test="dynamic" --name mystandard-api standard-api
+
+docker run -d -p 8000:8000 --name my-running-site iis-site
